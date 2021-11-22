@@ -23,7 +23,7 @@ var app = {
     console.log("Get NY Times Data");
     let currentSearchWord = 'apple';
     let currentFilter = 'glocations:("NEW YORK CITY")'
-    let nyTimesURL = 'http://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + currentSearchWord + '&fq=' + currentFilter + '&api-key=';
+    let nyTimesURL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=' + currentSearchWord + '&fq=' + currentFilter + '&api-key=';
     let myNYKey = '0pgnoYGBpkF7LpXNo9pXeW1tj4XkbLd3';
     let nyTimesReqURL = nyTimesURL + myNYKey;
     console.log(nyTimesReqURL);
