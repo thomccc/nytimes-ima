@@ -9,7 +9,9 @@ var app = {
     let theHTML = '';
     for (let i = 0; i < app.nyTimesArticles.length; i++){
       theHTML += "<div class='nytArticle'>";
-      theHTML += "<h3>" + app.nyTimesArticles[i].headline.main + "</h3>";
+      theHTML += "<h2>" + app.nyTimesArticles[i].headline.main + "</h2>";
+      theHTML += "<p>" + app.nyTimesArticles[i].abstract + "</p>";
+      theHTML += "<p>" + app.nyTimesArticles[i].pub_date + "</p";
       theHTML += "</div>";
     }
     $('.container').html(theHTML);

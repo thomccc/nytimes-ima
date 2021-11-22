@@ -12,11 +12,16 @@
     <title>New York Times</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1> Search Result For: apple </h1>
 
     <div class="wrap">
 
-      <div class="container"></div>
+
+      <div class="container">
+
+      </div>
+
+
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -32,6 +37,36 @@
         app.initialize();
       })();
     </script>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+
+
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+
+
+  const options = {
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
+  time: '0.7s', // default: '0.3s'
+  mixColor: '#ffc107', // default: '#fff'
+  backgroundColor: '#00bcd4',  // default: '#fff'
+  buttonColorDark: '#ffc107',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  label: '🌓', // default: ''
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+
+</script>
+
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
